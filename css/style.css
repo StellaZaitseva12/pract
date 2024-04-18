@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{ 
+    padding: 0;
+    box-sizing: border-box;}
+    .container {
+        width: 1200px;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+body {
+   margin: 0;
+}
+.Header {
+    background: url(../img/Фон\ итог.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .Header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+.navbar {
+    height: 116px;    
+    background-color: #023059;
+    display: flex;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo {
+    margin-left: 132;
+    margin-top: 9px;
+    width: 98px; 
+    height: 98px;
+}
+.glav {
+    width: 902px; 
+    height: 116px; 
+    justify-content: space-between; 
+    align-items: center; 
+    display: flex;
+    transition: .3s;
+    z-index: 100;
+top: 0;
+}
+.glav a {
+    color: white; 
+    font-size: 24px; 
+    font-family: Montserrat;
+    text-decoration: none;
+}
+
+.menu-button{
+    margin-top: 40px;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    display: none;
+    z-index: 101;
+}
+.menu-button span{
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    transition: .3s;
+}
+.block {
+    text-align: center;
+    /* height: 194px; */
+    padding: 20px 15px 20px 0px;
+    width: 877px;
+    max-width: 80%;
+    background-color: #023059;
+    margin-top: 215px;
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.block:after {
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    content: '';
+    position: absolute;
+    top: -26px;
+    left:  16px;
+}
+.podz {
+    color: white; 
+    font-size: 32px; 
+    font-family: Montserrat;
+    transform: translate(20px, 0px);
+}
+.naz {
+    color: white; 
+    font-size: 56px; 
+    font-family: "Cormorant Infant", serif;
+    font-weight: 300;
+    margin-top: 15px;
+    transform: translate(20px, 0px);
+}
+.goroda {
+
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+
+}
+.goroda ul {
+        color: black; 
+    font-size: 24px; 
+    font-family: Montserrat;
+    list-style-type: none;
+    text-align: center;
+}
+.knop {
+    height: 88px;
+    width: 404px;
+    max-width: 80%;
+    background-color: #023059;
+    margin-top: 150px;
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+}
+.knoptext {
+    color: white; 
+    font-size: 32px; 
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.slide {
+    transition: .3s;
+    transform: scale(0.8);
+    box-shadow: -32px -32px 0 0 #cad1d7;
+}
+.slide.slick-current {
+    transform: scale(1);
+}
+.slick-slide img {
+    width: 100%;
+}
+.slaidspb {
+    height: 505px;
+    width: 400px;  
+    background-color: #F1F8FF;
+    /* margin-left: 170px;
+    margin-top: 84px;   */
+    position: relative;
+}
+
+.slaidtextspb {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 27px;
+    margin-bottom: 22px;
+    justify-content: center;
+    display: flex;
+}
+.slaidknopspb {
+    transition: .3s;
+    height: 0px;
+    background-color: #023059;
+    margin-top: 28px;
+    justify-content: center; 
+    display: flex;
+    align-items: center;
+}
+.slide.slick-current .slaidknopspb{
+    height: 51px;
+}
+.slaidmos, .slaidnov, .slaidspb{
+    margin-left: 40px;
+    margin-right: 180px;
+}
+.slaidknoptext {
+    color: white; 
+    font-size: 0px; 
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.slide.slick-current .slaidknoptext{
+    font-size: 20px; 
+}
+
+.slaidmos {
+    height: 505px;
+    width: 400px;  
+    max-width: 90%;
+    background-color: #F1F8FF;
+    /* margin-left: 170px;
+    margin-top: 84px;   */
+    position: relative;
+}
+
+.slaidtextmos {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+    display: flex;
+}
+.slaidknopmos {
+    transition: .3s;
+    height: 0px;
+    background-color: #023059;
+    margin-top: 28px;
+    justify-content: center; 
+    display: flex;
+    align-items: center;
+}
+
+.slide.slick-current .slaidknopmos{
+    height: 51px;
+}
+.slaidknoptextmos {
+    color: white; 
+    font-size: 0px; 
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.slide.slick-current .slaidknoptextmos{
+    font-size: 20px; 
+}
+.slaidnov {
+    height: 505px;
+    width: 400px;  
+    background-color: #F1F8FF;
+    /* margin-left: 170px;
+    margin-top: 84px;   */
+    position: relative;
+}
+
+.slaidtextnov {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+    display: flex;
+}
+
+.slaidknopnov {
+    transition: .3s;
+    height: 0px;
+    background-color: #023059;
+    margin-top: 28px;
+    justify-content: center; 
+    display: flex;
+    align-items: center;
+}
+.slide.slick-current .slaidknopnov{
+    height: 51px;
+}
+.slaidknoptextnov {
+    color: white; 
+    font-size: 0px; 
+    font-family: Montserrat;
+    font-weight: 500;
+    
+}
+.slide.slick-current .slaidknoptextnov{
+    font-size: 20px;
+}
+
+
+
+
+.line {
+    padding-top: 83px;
+    /* padding-left: 198px; */
+
+}
+.hudoright {
+    display: flex;
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+}
+.isskus {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    align-items: end;
+}
+.galer {
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 80px;
+   position: relative;
+
+}
+
+
+.swiper-slide{
+    position: relative;
+    display: flex !important;
+    justify-content: center;
+}
+.swiper-slide .text{
+    transition: .3s;
+    
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 25px;
+    font-family: Montserrat;
+    background-color: #CAD1D7;
+    opacity: 0;
+}
+.swiper-slide-active.swiper-slide .text{
+    opacity: 1;
+}
+.swiper-slide-active.swiper-slide img{
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+.swiper-slide img{
+    
+    margin-top: 60px;
+    transition: .3s;
+    width: 80%;
+    
+}
+
+
+
+
+.swiper-button-prev, .swiper-button-next{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    bottom: 0 !important;
+    top: auto !important;
+
+}
+
+.swiper-button-prev {
+    left: calc(50% - 200px) !important;
+    background-image: url('../img/Стрелавлево.svg');
+    width: 93px !important;
+    height: 39px !important;
+    color: transparent !important;
+    background-color: transparent !important;
+}
+
+.swiper-button-next {
+    right: calc(50% - 200px) !important;
+    background-image: url('../img/Стрелавправо.svg');
+    width: 95px !important;
+    height: 39px !important;
+    color: transparent !important;
+    background-color: transparent !important;
+}
+
+.menu-button.open span:nth-child(1) {
+    transform: rotateZ(45deg) translateY(17px);
+}
+
+.menu-button.open span:nth-child(2) {
+    width: 0%;
+}
+
+.menu-button.open span:nth-child(3) {
+    transform: rotateZ(-45deg)  translateY(-17px);
+}
+
+@media screen and (max-width: 875px){
+    .glav {
+        position: fixed;
+        width: 100vw;
+        height: 100dvh;
+        background: #023059;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+
+        right: 200%;
+    }
+
+    .menu-button{
+        display: flex;
+    }
+}
+.menu-show {
+    right: 0;
+}
+
+
+
+.tab {
+    overflow: hidden;
+    background-color: #023059;
+
+    
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 17px 0px;
+    transition: 0.3s;
+    color: #fff;
+    width: 230px;
+    height: 86px;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+
+.tab button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.tab button.active {
+    background-color: #fff;
+  color: #000; 
+}
+
+
+.tabcontent {
+    padding-top: 85px;
+    border-top: none;
+    gap: 60px;
+    justify-content: center;
+    
+    flex-wrap: wrap-reverse;
+}
+
+.tabcontent img {
+    max-width: 80%;
+    width: 500px;
+}
+.tabcontent p{
+    max-width: 90%;
+    width: 600px;
+}
+.zayavbox img {
+    width: 434px;
+    height: 373px;
+}
+
+.zayavbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 117px;
+    align-items: center;
+}
+.gr_buttons{
+    max-width: 100%;
+    display: flex   ;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.input {
+    height: 48px;
+    font-size: 20px;
+    border:0;
+    border-bottom: 1px solid #000000;
+    background-color: #F1F8FF;
+    color: #000;
+    outline: 0;
+}
+.select {
+    height: 48px;
+    font-size: 20px;
+}
+.btn {
+    height: 48px;
+    font-family: Montserrat;
+    font-size: 20px;
+    background-color: #023059;
+    color: #fff;
+    font-size: 24px;
+}
+
+.futer {
+    background: url(../img/Futer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.futerbk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    gap: 30px;
+}
+.futerblock {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.futerkontakt {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+}
+.futerblock a{
+    color: white; 
+    font-size: 24px; 
+    font-family: Montserrat;
+    text-decoration: none;
+    font-weight: 500;
+}
+.futerkontakt a{
+    color: white; 
+    font-size: 24px; 
+    font-family: Montserrat;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.vv {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.futerlogo {
+    justify-content: center;
+    display: flex;
+}
+
+.otzivslaider
+ {
+     position: relative;
+    max-width: 100%;
+    width: 1000px;
+    padding-bottom:50px ;
+    border: #000 solid 3px;
+    display: flex;
+    box-shadow: #cad1d7 25px 25px 0;
+}
+.otzivslik {
+    padding: 20px;
+    position: relative;
+    display: flex;
+
+    /* padding-left: 30px;
+    padding-right: 30px; */
+}
+.otzivslik p {
+    font-size: 20px;
+ 
+    /* height: 120px; */
+}
+
+.otzivslik h3 {
+    font-size: 24px;
+    padding: 0px;
+    font-family: Montserrat;
+}
+
+.otzstar {
+    /* position: absolute; */
+    display: flex;
+    bottom: 0;
+    right: 0;
+    gap: 19px;
+
+    align-self: flex-end;
+}
+
+.otzstar img {
+    width: 45px;
+    height: 45px;
+}
+
+
+
+
+
+
+
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+section h2 {
+    font-size: 32px;
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+section.onas h2{
+    text-align: left;
+    color: #fff;
+    margin-bottom: 27px;
+}
+
+section.Otzivi h2 {
+    text-align: left;
+}
+
+section p {
+    font-size: 20px;
+    font-family: Montserrat;
+    text-align: left;
+
+
+}
+.hudo p  {
+    text-align: left;
+    font-size: 20px;
+}
+
+.futerkontakt p{
+    color: white; 
+    font-size: 32px; 
+    font-family: Montserrat;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0;
+}
+.hudobox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hudobox > img {
+   box-shadow: -32px -32px 0 0 #cad1d7;
+   max-width: 90%;
+}
+
+.hudotext{
+    display: flex;
+    gap: 60px;
+    /* width: 597px; */
+    /* height: 420px; */
+    /* flex-wrap: wrap; */
+    
+}
+
+section {
+    padding-top: 40px ;
+    padding-bottom: 60px;
+}
+
+section.hudo{
+    padding-top: 60px;
+    padding-bottom: 60px;
+background-color: #F1F8FF;
+}
+
+section.zayavka {
+    background-color: #F1F8FF;
+}
+.zayavtext{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 600px;
+}
+
+.vist .slick-list.draggable
+{
+    height: 620px;
+    width: 1020px;
+    max-width: 100%;
+    padding-left: 36px;
+    padding-top: 80px;
+}
+
+.vistslaid {
+    /* width: 1000px; */
+display: flex;
+    /* transform: translateX(0px); */
+    /* margin-left: 0; */
+}
+.vistslaid .slick-next.slick-arrow {
+    background: url(/img/arrow.svg) no-repeat;
+    position: absolute;
+    right: 20px;
+    height: 70px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+    color: transparent;
+    top: calc(50% - 35px);
+}
+.vistslaid .slick-prev.slick-arrow{
+    display: none !important;
+}
+
+
+.otzivslaider .slick-next.slick-arrow{
+    background: url(/img/Otzverh.svg) no-repeat;
+    position: absolute;
+    right: -150px;
+    top: 30px;
+    height: 70px;
+    width: 72px;
+    border: none;
+    cursor: pointer;
+    color: transparent;
+}
+
+
+.otzivslaider .slick-prev.slick-arrow{
+    background: url(/img/Otzvniz.svg) no-repeat;
+    position: absolute;
+    right: -150px;
+    bottom: -25px;
+    height: 70px;
+    width: 72px;
+    border: none;
+    cursor: pointer;
+    color: transparent;
+}
+
+@media screen and (max-width: 1176px) {
+
+    .hudobox {
+        justify-content: center;   
+    }
+    .hudoright {
+        width:  auto;
+    }
+
+    .swiper-slide .text {
+        font-size: 19px;
+    }
+   
+}
+@media screen and (max-width: 680px) {
+    .otzstar img{
+        width: 20px;
+        height: 20px;
+        gap: 5  px;
+    }
+  
+    .otzivslik p{
+        font-size: 14px;
+    }
+    .otzivslaider{
+        max-width: 80%;
+    }
+    .zayavbox{
+        justify-content: center;
+    }
+    .zayavbox img{
+        width: 200px;
+        height: 200px;  
+    }
+    .tabcontent{
+        justify-content: center;
+    }
+    .slide.slick-current {
+        transform: scale(0.8);
+    }
+
+    .slaidmos, .slaidnov, .slaidspb {
+        margin-left: 0; 
+         margin-right: 0;
+    }
+    .hudobox{
+        flex-direction: column;
+    }
+    .hudotext{
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+    .hudobox img{
+        width: 80%  ;
+       
+    }
+     
+    .swiper-button-next {
+        right: calc(50% - 100px) !important
+    }
+
+    .swiper-button-prev {
+        left: calc(50% - 100px) !important
+    }
+    .swiper-slide .text {
+        font-size: 16px;
+    }
+}
