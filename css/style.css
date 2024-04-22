@@ -13,7 +13,7 @@ body {
    margin: 0;
 }
 .Header {
-    background: url(../img/Фон\ итог.jpg);
+    background: url(../img/Фон-итог.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -505,7 +505,7 @@ top: 0;
 }
 
 .futer {
-    background: url(../img/Futer.jpg);
+    background: url(../img/Futer.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
